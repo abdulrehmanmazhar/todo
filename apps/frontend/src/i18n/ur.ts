@@ -1,0 +1,176 @@
+import type { LanguageDefinition } from "./types";
+import type { Messages } from "./en";
+
+export const ur: LanguageDefinition<Messages> = {
+  id: "ur",
+  label: "Urdu",
+  nativeLabel: "اردو",
+  direction: "rtl",
+  locales: ["ur"],
+  messages: {
+    common: {
+      system: "سسٹم",
+      openSidebar: "سائیڈ بار کھولیں",
+      collapseSidebar: "سائیڈ بار بند کریں",
+      sendMessage: "پیغام بھیجیں",
+      delete: "حذف کریں",
+      cancel: "منسوخ",
+    },
+    extensions: {
+      home: {
+        name: "ٹو ڈوز",
+        description: "فہرستیں، ترجیحات اور مقررہ تاریخیں منظم کریں",
+      },
+      settings: {
+        name: "ترتیبات",
+        description: "ورک اسپیس کی ترجیحات ترتیب دیں",
+      },
+    },
+    home: {
+      title: "ٹو ڈوز",
+      description:
+        "فہرستوں میں ترجیحات اور مقررہ تاریخوں کے ساتھ کام کی منصوبہ بندی کریں۔",
+      listDescription: "اس فہرست میں کھلے کام۔",
+      placeholder: "کیا کرنا ہے؟",
+      searchPlaceholder: "کام تلاش کریں…",
+      loading: "ٹو ڈوز لوڈ ہو رہے ہیں…",
+      errorTitle: "ٹو ڈوز لوڈ نہیں ہو سکے",
+      errorDescription:
+        "یقینی بنائیں کہ بیک اینڈ ایکسٹینشن منسلک ہے، پھر دوبارہ کوشش کریں۔",
+      emptyTitle: "یہاں کوئی کام نہیں",
+      emptyDescription:
+        "ایک کام بنائیں یا بائیں پینل سے منظر تبدیل کریں۔",
+      emptyLists: "ابھی کوئی فہرست نہیں۔ کام منظم کرنے کے لیے ایک بنائیں۔",
+      dueOn: "مقررہ {date}",
+      remaining: "{count} باقی",
+      sections: {
+        smart: "مناظر",
+        lists: "فہرستیں",
+      },
+      smart: {
+        all: "سب",
+        inbox: "ان باکس",
+        today: "آج",
+        upcoming: "آنے والے",
+        completed: "مکمل",
+      },
+      smartDescriptions: {
+        all: "آپ کے ورک اسپیس کے تمام کام۔",
+        inbox: "وہ کام جو ابھی کسی فہرست میں نہیں۔",
+        today: "آج مقررہ — اب جو اہم ہے اس پر توجہ دیں۔",
+        upcoming: "اس ہفتے بعد میں اور اس کے بعد کے لیے شیڈول۔",
+        completed: "مکمل کام جو آپ محفوظ یا صاف کر سکتے ہیں۔",
+      },
+      filters: {
+        all: "سب",
+        active: "فعال",
+        completed: "مکمل",
+      },
+      sort: {
+        created: "جدید ترین",
+        due: "مقررہ تاریخ",
+        priority: "ترجیح",
+        title: "عنوان",
+      },
+      priority: {
+        none: "کوئی نہیں",
+        low: "کم",
+        medium: "درمیانی",
+        high: "اعلیٰ",
+      },
+      fields: {
+        title: "عنوان",
+        notes: "نوٹس",
+        notesPlaceholder: "سیاق، لنکس، یا اگلے مراحل شامل کریں…",
+        list: "فہرست",
+        listName: "فہرست کا نام",
+        listNamePlaceholder: "مثلاً ذاتی، کام",
+        color: "رنگ",
+        priority: "ترجیح",
+        dueDate: "مقررہ تاریخ",
+        noDueDate: "کوئی تاریخ نہیں",
+        today: "آج",
+        clearDueDate: "صاف کریں",
+        status: "حالت",
+      },
+      dialog: {
+        createTitle: "نیا کام",
+        createDescription:
+          "کام درج کریں، پھر فہرست، ترجیح اور مقررہ تاریخ تفویض کریں۔",
+        editTitle: "کام میں ترمیم",
+        editDescription: "تفصیلات اپ ڈیٹ کریں اور منصوبہ تازہ رکھیں۔",
+        createListTitle: "نئی فہرست",
+        createListDescription: "متعلقہ کاموں کو نامزد فہرست کے تحت گروپ کریں۔",
+        renameListTitle: "فہرست کا نام بدلیں",
+        renameListDescription: "فہرست کا نام یا رنگ اپ ڈیٹ کریں۔",
+      },
+      detail: {
+        title: "تفصیلات",
+        empty: "نوٹس، شیڈول اور فہرست دیکھنے کے لیے ایک کام منتخب کریں۔",
+        noNotes: "ابھی کوئی نوٹ نہیں۔",
+        noDueDate: "کوئی مقررہ تاریخ نہیں",
+        updated: "اپ ڈیٹ شدہ {date}",
+      },
+      actions: {
+        add: "شامل کریں",
+        save: "محفوظ کریں",
+        edit: "ٹو ڈو میں ترمیم",
+        markDone: "مکمل نشان لگائیں",
+        markActive: "فعال نشان لگائیں",
+        clearCompleted: "مکمل شدہ صاف کریں ({count})",
+        newList: "نئی فہرست",
+        renameList: "فہرست کا نام بدلیں",
+        deleteList: "فہرست حذف کریں",
+      },
+      toasts: {
+        empty: "اطلاع",
+        successTitle: "ہو گیا",
+        errorTitle: "کچھ غلط ہو گیا",
+        error: "درخواست ناکام ہو گئی۔",
+        created: "کام بن گیا۔",
+        updated: "کام اپ ڈیٹ ہو گیا۔",
+        deleted: "کام حذف ہو گیا۔",
+        markedDone: "مکمل نشان لگ گیا۔",
+        markedActive: "فعال نشان لگ گیا۔",
+        cleared: "{count} مکمل کام صاف کر دیے گئے۔",
+        listCreated: "فہرست بن گئی۔",
+        listUpdated: "فہرست اپ ڈیٹ ہو گئی۔",
+        listDeleted: "فہرست حذف ہو گئی۔",
+      },
+    },
+    settings: {
+      title: "ترتیبات",
+      tabs: {
+        themes: "تھیمز",
+      },
+      themes: {
+        title: "تھیمز",
+        description:
+          "اپنے ورک اسپیس کے لیے ظاہری شکل، رنگ، اور زبان ترتیب دیں۔",
+        appearance: {
+          title: "ظاہری شکل",
+          description: "روشن، تاریک، یا سسٹم کی ترجیح منتخب کریں۔",
+          light: "روشن",
+          dark: "تاریک",
+          system: "سسٹم",
+        },
+        colorTheme: {
+          title: "رنگ تھیم",
+          description: "ورک اسپیس پر لگنے والا رنگ منتخب کریں۔",
+          default: "ڈیفالٹ",
+          blue: "نیلا",
+          green: "سبز",
+          violet: "بنفشی",
+          orange: "نارنجی",
+          rose: "گلاب",
+        },
+        language: {
+          title: "زبان",
+          description:
+            "زبان منتخب کریں یا سسٹم کی پیروی کریں۔ دائیں سے بائیں زبانیں لے آؤٹ خود بخود بدل دیتی ہیں۔",
+          system: "سسٹم",
+        },
+      },
+    },
+  },
+};
